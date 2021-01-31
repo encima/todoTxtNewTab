@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>todoTxt Tab</title>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7/dist/polyfill.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.3.min.css"/>
+  <script src="https://unpkg.com/dropbox"></script>
+  <script src="https://unpkg.com/mithril/mithril.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container main"> 
+    
+    <form id="auth-form" onSubmit="return listFiles()">
+      <input type="text" id="access-token" placeholder="Add token" />
+      <button type="submit">Submit</button>
+    </form>
+
+
+    <p class="info">To obtain an access token for quick testing, you can go to <a href="https://dropbox.github.io/dropbox-api-v2-explorer/#files_list_folder" target="_blank">API Explorer</a> click the "Get Token" button on the top right, copy the token it creates and then paste it here.</p>
+  </section>
+
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
